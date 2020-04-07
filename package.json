@@ -1,0 +1,25 @@
+{
+  "name": "wbdv-sp20-siyan-he-server-node",
+  "version": "1.0.0",
+  "description": "Node server for CS5610 (Spring 2020)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.ccs.neu.edu/hsy/wbdv-sp20-siyan-he-server-node.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "web",
+    "server",
+    "cs5610"
+  ],
+  "author": "Siyan He",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

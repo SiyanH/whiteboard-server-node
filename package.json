@@ -20,7 +20,8 @@
   "author": "Siyan He",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.9.9"
   },
   "engines": {
     "node": "13.12.0"

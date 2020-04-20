@@ -1,6 +1,8 @@
-let express = require('express');
-let app = express();
+const express = require('express');
+const app = express();
 
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers',
@@ -12,5 +14,6 @@ app.use(function (req, res, next) {
 
 require('./controllers/quizzes.controller.server')(app);
 require('./controllers/questions.controller.server')(app);
+require('./controllers/quiz-attempts.controller.server')(app);
 
 app.listen(process.env.PORT || 3000);
